@@ -6,6 +6,8 @@
 package co.simplon.avent.repository;
 
 import co.simplon.avent.model.Link;
+import java.time.LocalDate;
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -13,5 +15,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author vanessa
  */
 public interface LinkRepository extends JpaRepository<Link, Long>{
+    
+    List<Link> findByDate(LocalDate date);
     
 }
