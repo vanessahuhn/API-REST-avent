@@ -5,10 +5,13 @@
  */
 package co.simplon.avent.repository;
 
+import co.simplon.avent.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
  *
  * @author vanessa
  */
-public interface UserRepository {
+public interface UserRepository extends JpaRepository<User, Long>{
     
 }
